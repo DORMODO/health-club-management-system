@@ -53,7 +53,7 @@ public class FileHandler {
         try (Scanner scanner = new Scanner(new File(MEMBERS_FILE))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                String[] data = line.split(",");
+                String[] data = line.split("/");
                 // Verify data format before creating member object
                 if (data.length == 3) {
                     // Create member with username, password, and ID
@@ -98,7 +98,7 @@ public class FileHandler {
         try (Scanner scanner = new Scanner(new File(COACHES_FILE))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                String[] data = line.split(",");
+                String[] data = line.split("/");
                 // Verify data format before creating coach object
                 if (data.length == 3) {
                     // Create coach with username, password, and ID

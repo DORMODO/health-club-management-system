@@ -38,7 +38,7 @@ public class FileHandlerDemo {
         System.out.println("| Username  | Password |   ID    |");
         System.out.println("+-----------+----------+---------+");
         for (Member member : loadedMembers) {
-            String[] data = member.toString().split(",");
+            String[] data = member.toString().split("/");
             System.out.printf("| %-9s | %-8s | %-7s |\n", data[0], data[1], data[2]);
         }
         System.out.println("+-----------+----------+---------+");
@@ -68,7 +68,7 @@ public class FileHandlerDemo {
         System.out.println("| Username  | Password |   ID    |");
         System.out.println("+-----------+----------+---------+");
         for (Coach coach : loadedCoaches) {
-            String[] data = coach.toString().split(",");
+            String[] data = coach.toString().split("/");
             System.out.printf("| %-9s | %-8s | %-7s |\n", data[0], data[1], data[2]);
         }
         System.out.println("+-----------+----------+---------+");

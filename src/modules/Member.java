@@ -168,6 +168,6 @@ public class Member extends User {
 
     @Override
     public String toString() {
-        return String.format("%s,%s,%s", getUsername(), getPassword(), getID());
+        return String.format("%s/%s/%s", getUsername(), getPassword(), getID());
     }
 }
